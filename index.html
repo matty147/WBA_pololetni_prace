@@ -6,98 +6,208 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Celeste</title>
-    <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73" media="screen"/>
+    <link rel="stylesheet" href="./resources/reset.css" media="screen"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" media="screen"/>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             height: 5000px;
+            background-image: linear-gradient(#f193bf, #000f20);
         }
 
         .menu {
             height: 15vh;
             width: 100%;
             background-color: #c17676;
-            display:flex;
-            align-content:center;
+
+            display: flex;
+            align-content: center;
             justify-content: space-between;
 
         }
 
         .burger {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
             height: 100%;
             font-size: 50px;
             padding-left: 13px;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
         }
 
-        .celeste{
+        .celeste {
             display: flex;
             flex-direction: row;
             align-items: center;
-            font-size:75px;
+            font-size: 75px;
             font-weight: bold;
-            color:white;
+            color: black;
         }
 
-        .gameLogo
-        {
-            background-image: url(./pictures/berry.png);
+        .gameLogo {
+            background-image: url(./resources/berry.png);
             background-size: contain;
             background-repeat: no-repeat;
             height: 75px;
             width: 75px;
-            display: flex;
         }
 
-        .companyLogo
-        {
-            background-image: url(./pictures/exok-mark.png);
+        .companyLogo {
+            background-image: url(./resources/exok-mark.png);
             background-size: contain;
             background-repeat: no-repeat;
             height: 85px;
             width: 75px;
         }
 
-        .banner{
-            background-image: url(./pictures/summitendscreen.jpg);
-            background-size: cover; /* Adjusted to 'cover' to fill the entire background */
+        .banner {
+            background-image: url(./resources/summitendscreen.jpg);
+            background-size: cover;
             background-repeat: no-repeat;
-            height: 100vh; /* Adjusted to cover the full viewport height */
+            height: 100vh;
             width: 100%;
         }
 
 
         .logo-overlay {
-            background-image: url(./pictures/CELESTE_LOGO.png);
-            background-size: 3500px;
+            background-image: url(./resources/small_CELESTE_LOGO.png);
+            background-size: cover;
             background-repeat: no-repeat;
-            height: 3500px;
-            width: 100vh;
+            height: 686px;
+            width: 800px;
+
             position: absolute;
-            top: 50%;
+            top: 65%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
         }
 
 
+        .ratings {
+            margin: 150px 50px;
+            height: auto;
+            width: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .buttons {
+            margin: 0 20px;
+            height: 250px;
+            width: 250px;
+            background-color: #84a7ef;
+            border-radius: 75px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .IGN {
+            background-image: url(./resources/Ign.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 150px;
+        }
+
+        .Metacritic {
+            background-image: url(./resources/Metacritic.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 150px;
+        }
+
+        .GameSpot {
+            background-image: url(./resources/GameSpot.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 150px;
+        }
+
+        .Steam {
+            background-image: url(./resources/Steam.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 150px;
+        }
+
+        .trailer {
+            font-size: 100px;
+            font-weight: bold;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .trailer > p {
+            padding-bottom: 50px;
+        }
+
+        .quote {
+            max-width: 1000px;
+            margin: 0 auto;
+            height: auto;
+            padding: 100px 0;
+            font-size: 100px;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
 <div class="menu">
     <i class="fa-solid fa-bars burger"></i>
-    <div class = "celeste">
-        <div class="gameLogo"> </div>
-        <div class=""> Celeste </div>
+    <div class="celeste">
+        <div class="gameLogo"></div>
+        <div class="">Celeste</div>
     </div>
-    <div class ="image companyLogo"></div>
+    <div class="image companyLogo"></div>
 
 </div>
-<div class = "banner"> </div>
-<div class = "logo-overlay"></div>
+<div>
+    <div class="banner"></div>
+    <div class="logo-overlay"></div>
+</div>
+<div class="ratings">
+    <div class="buttons">
+        <div class="IGN"></div>
+        <p>10/10</p>
+    </div>
+    <div class="buttons">
+        <div class="Metacritic"></div>
+        <p>92%</p>
+    </div>
+    <div class="buttons">
+        <div class="GameSpot"></div>
+        <p>9/10</p>
+    </div>
+    <div class="buttons">
+        <div class="Steam"></div>
+        <p>Overwhelmingly Positive</p>
+    </div>
+</div>
+<div class="trailer">
+    <p>Game trailer</p>
+    <iframe width="1236" height="695" src="https://www.youtube.com/embed/FqBj2IGg6Uw"></iframe>
+</div>
+<div class="quote"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit”</div>
 </body>
 </html>
 

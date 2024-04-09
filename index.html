@@ -6,13 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Celeste</title>
-    <link rel="stylesheet" href="./resources/reset.css" media="screen"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" media="screen"/>
+    <link rel="stylesheet" href="./.css/reset.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          media="screen"/>
+    <script src="./.js/index.js"></script>
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            height: 5000px;
+            height: auto;
             background-image: linear-gradient(#f193bf, #000f20);
+            cursor: url(./resources/cursors/base.png), auto;
         }
 
         .menu {
@@ -34,6 +38,24 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+        }
+
+        .burgerMenu {
+            visibility: hidden;
+            background-color: #935858;
+            height: 300px;
+            width: 200px;
+            position: absolute;
+            left: 60px;
+            top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .burgerMenu > a {
+            font-size: 40px;
         }
 
         .celeste {
@@ -169,11 +191,24 @@
             text-align: center;
         }
 
+        .screenshots {
+
+        }
+
     </style>
 </head>
 <body>
 <div class="menu">
-    <i class="fa-solid fa-bars burger"></i>
+    <i class="fa-solid fa-bars burger" id="burgerIcon"></i>
+    <div class="burgerMenu" id="menu">
+        <a href="url">link text</a>
+        <a href="url">link text</a>
+        <a href="url">link text</a>
+        <a href="url">link text</a>
+
+
+
+    </div>
     <div class="celeste">
         <div class="gameLogo"></div>
         <div class="">Celeste</div>
@@ -208,6 +243,12 @@
     <iframe width="1236" height="695" src="https://www.youtube.com/embed/FqBj2IGg6Uw"></iframe>
 </div>
 <div class="quote"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit”</div>
+<div class="screenshots">
+    <p>screenshots</p>
+    <!-- decide on how to do them -->
+
+
+</div>
 </body>
 </html>
 

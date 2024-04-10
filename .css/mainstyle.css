@@ -1,0 +1,89 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    cursor: url(../resources/cursors/base.png), auto;
+}
+
+.menu {
+    height: 15vh;
+    width: 100%;
+    background-color: #c17676;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+.burger {
+    height: 100%;
+    font-size: 75px;
+    padding-left: 13px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.burgerMenu {
+    visibility: hidden;
+    background-color: #935858;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.burgerMenu > a {
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+
+.celeste {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 75px;
+    font-weight: bold;
+    color: black;
+}
+
+.gameLogo {
+    background-image: url(../resources/berry.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+
+.companyLogo {
+    background-image: url(../resources/Index/exok-mark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 85px;
+    width: 75px;
+    display: flex;
+    align-self: center;
+    margin-right: 50px;
+}
+
+.banner {
+    background-image: url(../resources/Index/summitendscreenalt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}

@@ -87,3 +87,27 @@ body {
     height: 100vh;
     width: 100%;
 }
+
+.footer {
+    color:white;
+    width: auto;
+    height: auto;
+    background-color: #0d0711;
+}
+
+.footer > p{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.legalstuf{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    gap:30px;
+}

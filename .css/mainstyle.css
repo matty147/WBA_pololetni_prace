@@ -59,6 +59,11 @@ body {
     font-size: 75px;
     font-weight: bold;
     color: black;
+    background-image: url(../resources/Wiki/Celeste-text.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 562px;
 }
 
 .gameLogo {

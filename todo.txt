@@ -5,3 +5,4 @@ finish main page
 remake reviews
 get better pictures - https://www.dropbox.com/sh/87lycjzncb0o9ns/AACcA3s5Uyzkeicn3-26qLBWa?dl=0 - official pictures
 finish main menu at top + hamburgerthingy
+make tab picture

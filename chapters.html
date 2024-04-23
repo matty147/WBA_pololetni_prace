@@ -28,22 +28,28 @@
             font-weight: bold;
             text-shadow: 2px 2px #000000;
 
-            transition: all 1s ease;
+            transition: height 0.5s ease;
         }
 
         .chapters:hover {
             height: 4500px;
-            justify-content: start;
             text-align: center;
+            justify-content: start;
         }
-
-        .text {
-            display: none;
+        .info {
+            width: 75%;
+            padding-top: 50px;
             font-size: 50px;
+            display: none;
         }
 
-        .chapters:hover .text {
+
+        .chapters:hover > .info {
             display: block;
+        }
+
+        .chapters:hover > .title {
+            padding-top: 50px;
         }
 
         .Epilogue {
@@ -125,36 +131,44 @@
 
 <div class="chapters">
     <div class="chapters Epilogue">
-        <p>Epiloque</p>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores atque, autem
-            blanditiis dolore enim fugit ipsa iure modi molestias nisi.</p>
+        <p class="title">Epiloque</p>
+        <p class="info">Prologue is the very first chapter of Celeste. The chapter servers as a tutorial for walking and jumping. It is very calm with almost nothing to kill you. The level is placed under the main mountain on a parking lot where the story begins. There is mostly snow on the ground </p>
     </div>
     <div class="chapters ForsakenCity">
-        <p>Forsaken City</p>
+        <p class="title">Forsaken City</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque, cupiditate dolorum, facere illum laudantium magnam, minus neque odio odit pariatur quia quis rem reprehenderit saepe sapiente temporibus ullam vel. </p>
     </div>
     <div class="chapters OldSite">
         <p>Old Site</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti earum est, fugit impedit itaque similique sint totam! Ab accusantium ad aliquid aperiam ipsam iste maiores placeat recusandae, totam unde!</p>
     </div>
     <div class="chapters CelestialResort">
         <p>Celestial Resort</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem reprehenderit, sit tempore. </p>
     </div>
     <div class="chapters GoldenRidge">
         <p>Golden Ridge</p>
+        <p class="info">
     </div>
     <div class="chapters MirrorTemple">
         <p>Mirror Temple</p>
+        <p class="info">
     </div>
     <div class="chapters Reflection">
         <p>Reflection</p>
+        <p class="info">
     </div>
     <div class="chapters TheSummit">
         <p>TheSummit</p>
+        <p class="info">
     </div>
     <div class="chapters Core">
         <p>Core</p>
+        <p class="info">
     </div>
     <div class="chapters Farewell">
         <p>Farewell</p>
+        <p class="info">
     </div>
 </div>
 

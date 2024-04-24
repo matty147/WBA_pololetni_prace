@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About us</title>
+
+    <link rel="stylesheet" href="./.css/reset.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          media="screen"/>
+    <link rel="stylesheet" href="./.css/mainstyle.css"/>
+    <link rel="shortcut icon" href="./resources/icon.png"/>
+    <script src=".js/main.js"></script>
+    <script src="./.js/index.js"></script>
+
+    <style>
+        body {
+            background-image: linear-gradient(#f193bf, #000f20);
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+            font-size: 100px;
+            font-weight: bold;
+            padding: 100px;
+            flex-direction: column;
+            width: 75%;
+            height: auto;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .title > p {
+            font-size: 50px;
+        }
+
+        .devs {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+
+        .chevy {
+            width: 512px;
+            height: 512px;
+        }
+
+        .name {
+            color: #091e1f;
+            font-weight: bold;
+            Font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .work {
+            Color: #726a6a;
+            font-size: 30px;
+        }
+
+        .farewell {
+            display: flex;
+            justify-items: center;
+            width: 1300px;
+            height: auto;
+            margin: auto;
+            padding: 75px 0;
+        }
+
+        .devs{
+            background-color: #03042a;
+            padding: 20px;
+            border: 20px solid #03042a;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .dev
+        {
+            background-color: #ffed00;
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="menu">
+    <i class="fa-solid fa-bars burger" id="burgerIcon"></i>
+    <div class="burgerMenu" id="menu"> <!--make a list!!!-->
+        <a href="index.html">Home</a>
+        <a href="wiki.html">Game wiki</a>
+        <a href="othergames.html">Other games</a>
+        <a href="aboutus.html">About us</a>
+    </div>
+    <div class="celeste">
+    </div>
+    <div class="image companyLogo"></div>
+</div>
+<div>
+    <div class="title">
+        <h1>About us</h1>
+        <p> We are a small indie game studio.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+            distinctio, dolorem ea eligendi eveniet ex impedit ipsam itaque maiores natus nobis officiis optio pariatur
+            praesentium quidem ratione tenetur unde vero. </p>
+    </div>
+    <div class="devs">
+        <div class="row">
+            <div class="dev">
+                <img class="mainFrame" src="./resources/Team/maddy.png" alt="Maddy Throson"/>
+                <h2 class="name">Maddy throson</h2>
+                <h3 class="work">Director of R&D</h3>
+            </div>
+            <div class="dev">
+                <img class="mainFrame" src="./resources/Team/noel.png" alt="Noel Berry"/>
+                <h2 class="name">Noel Berry</h2>
+                <h3 class="work">Computer Programmer</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="dev">
+                <img class="mainFrame" src="./resources/Team/amora.png" alt="Amora B."/>
+                <h2 class="name">Amora Bettany</h2>
+                <h3 class="work">Human Synthesis Technician</h3>
+            </div>
+            <div class="dev">
+                <img class="mainFrame" src="./resources/Team/pedro.png" alt="Pedro Medeiros"/>
+                <h2 class="name">Pedro Medeiros</h2>
+                <h3 class="work">Pixel Picker</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="dev">
+                <img class="mainFrame" src="./resources/Team/heidy.png" alt="Heidy Motta"/>
+                <h2 class="name">Heidy Motta</h2>
+                <h3 class="work">Responsibility Haver</h3>
+            </div>
+            <div class="dev">
+                <img class="mainFrame" src="./resources/Team/lena.png" alt="Lena Raine"/>
+                <h2 class="name">Lena Raine</h2>
+                <h3 class="work">Melody Mage</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="dev">
+                <img class="mainFrame" src="./resources/Team/powerup.png" alt="Power Up Audio"/>
+                <h2 class="name">Power Up Audio</h2>
+                <h3 class="work">Ear Ticklers</h3>
+            </div>
+            <div class="dev">
+                <img class="mainFrame chevy" src="./resources/Team/chevy.jpg" alt="Chevy Ray"/>
+                <h2 class="name">Chevy Ray</h2>
+                <h3 class="work">Dog Wrangler</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<img class="farewell" src="./resources/Farewell-endscreen.png" alt="Chevy Ray"/>
+
+<div class="footer">
+    <p>This is a fanmade project that is in no way associated with Celeste or Extremely OK Games, Ltd.</p>
+    <div class="legalstuf">
+        <p>Privacy policy</p>
+        <p>About</p>
+        <p>Disclaimers</p>
+        <p>Terms of Use</p>
+        <p>Contacts</p>
+    </div>
+</div>
+
+
+</body>
+</html>

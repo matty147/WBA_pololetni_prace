@@ -1,12 +1,15 @@
+* {
+    cursor: url(../resources/cursors/cursor.png), auto;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-    cursor: url(../resources/cursors/cursor.png), auto;
 }
 
 .menu {
     height: 15vh;
     min-height: 100px;
+    max-height: 250px;
     width: 100%;
     background-color: #c17676;
 
@@ -78,11 +81,10 @@ body {
     background-image: url(../resources/Index/exok-mark.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 85px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     display: flex;
     align-self: center;
-    margin-right: 50px;
 }
 
 .footer {
@@ -115,7 +117,7 @@ body {
         width: 375px;
     }
 
-    .burger{
+    .burger {
         font-size: 75px;
     }
 }
@@ -126,7 +128,7 @@ body {
         width: 625px;
     }
 
-    .burger{
+    .burger {
         font-size: 150px;
     }
 

@@ -25,7 +25,7 @@
         }
 
         .banner {
-            background-image: url(./resources/Index/summitendscreenalt.png);
+            background-image: url(./resources/Index/TheSummit-endscreen.png);
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
@@ -137,11 +137,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: end;
+
         }
 
         .screenshots > p {
             font-size: 100px;
             padding: 50px 0;
+            font-weight: bold;
         }
 
         .screenshots a {
@@ -149,6 +152,7 @@
         }
 
         .screenshots img {
+
             width: 1000px;
             height: auto;
             margin-bottom: 20px;
@@ -159,6 +163,15 @@
                 width: 1750px;
                 height: 1529px;
             }
+
+            @media (min-width: 200px)
+            {
+                .youtubeTrailer
+                {
+                    width: 80%;
+                    height:1080px;
+                }
+            }
         }
     </style>
 </head>
@@ -168,7 +181,7 @@
     <div class="burgerMenu" id="menu"> <!--make a list!!!-->
         <a href="index.html">Home</a>
         <a href="wiki.html">Game wiki</a>
-        <a href="history.html">History</a> <!--move it to wiki?!? and replace with something else-->
+        <a href="othergames.html">Other games</a>
         <a href="aboutus.html">About us</a>
     </div>
     <div class="celeste">
@@ -199,14 +212,14 @@
 </div>
 <div class="trailer">
     <p>Game trailer</p>
-    <iframe width="1236" height="695" src="https://www.youtube.com/embed/FqBj2IGg6Uw?si=T1mluLFJX_A3CRB6"
+    <iframe class = "youtubeTrailer" width="1236" height="695" src="https://www.youtube.com/embed/FqBj2IGg6Uw?si=T1mluLFJX_A3CRB6"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 <div class="quote"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit”</div>
 <div class="screenshots">
-    <p>screenshots</p>
+    <p>Screenshots</p>
 
     <a href="#"><img src="./resources/Index/Celeste_screenshot_01.png" alt="a"></a>
 

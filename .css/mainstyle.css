@@ -1,24 +1,24 @@
 
-
 body {
     font-family: 'Poppins', sans-serif;
-    cursor: url(../resources/cursors/base.png), auto;
+    cursor: url(../resources/cursors/cursor.png), auto;
 }
 
 .menu {
     height: 15vh;
+    min-height: 100px;
     width: 100%;
     background-color: #c17676;
 
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
 
 }
 
 .burger {
     height: 100%;
-    font-size: 75px;
+    font-size: 100px;
     padding-left: 13px;
 
     display: flex;
@@ -34,7 +34,7 @@ body {
     width: 200px;
     position: absolute;
     left: 60px;
-    top: 50px;
+    top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -56,8 +56,6 @@ body {
 
 .celeste {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     font-size: 75px;
     font-weight: bold;
     color: black;
@@ -87,34 +85,53 @@ body {
     margin-right: 50px;
 }
 
-.banner {
-    background-image: url(../resources/Index/summitendscreenalt.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-}
-
 .footer {
-    color:white;
+    color: white;
     width: auto;
     height: auto;
     background-color: #0d0711;
 }
 
-.footer > p{
+.footer > p {
     display: flex;
     justify-content: center;
     padding-top: 40px;
     font-weight: bold;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.legalstuf{
+.legalstuf {
     padding-top: 50px;
     padding-bottom: 25px;
     display: flex;
     justify-content: center;
     align-self: end;
-    gap:30px;
+    gap: 30px;
+}
+
+@media (max-height: 900px) {
+    .celeste {
+        height: 80px;
+        width: 375px;
+    }
+
+    .burger{
+        font-size: 75px;
+    }
+}
+
+@media (min-height: 1500px) {
+    .celeste {
+        height: 133px;
+        width: 625px;
+    }
+
+    .burger{
+        font-size: 150px;
+    }
+
+    .companyLogo {
+        height: 180px;
+        width: 180px;
+    }
 }

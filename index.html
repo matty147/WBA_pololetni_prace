@@ -8,13 +8,13 @@
     <title>Celeste</title>
 
 
-    <link rel="stylesheet" href="./.css/reset.css" media="screen"/>
+    <link rel="stylesheet" href="./css/reset.css" media="screen"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           media="screen"/>
-    <link rel="stylesheet" href="./.css/mainstyle.css"/>
+    <link rel="stylesheet" href="./css/mainstyle.css"/>
     <link rel="shortcut icon" href="./resources/icon.png"/>
-    <script src=".js/main.js"></script>
-    <script src="./.js/index.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/index.js"></script>
 
 
     <style>
@@ -156,6 +156,14 @@
             width: 1000px;
             height: auto;
             margin-bottom: 20px;
+            position: absolute;
+        }
+
+        .clouds {
+            background-image: url(./resources/clouds_small.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: auto;
         }
 
         @media (min-height: 1400px) {
@@ -164,12 +172,10 @@
                 height: 1529px;
             }
 
-            @media (min-width: 200px)
-            {
-                .youtubeTrailer
-                {
+            @media (min-width: 200px) {
+                .youtubeTrailer {
                     width: 80%;
-                    height:1080px;
+                    height: 1080px;
                 }
             }
         }
@@ -188,37 +194,41 @@
     </div>
     <div class="image companyLogo"></div>
 </div>
-<div>
-    <div class="banner"></div>
-    <div class="logo-overlay"></div>
+<div class="clouds">
+    <div>
+        <div class="banner"></div>
+        <div class="logo-overlay"></div>
+    </div>
+    <div class="ratings">
+        <div class="buttons">
+            <div class="IGN"></div>
+            <p>10/10</p>
+        </div>
+        <div class="buttons">
+            <div class="Metacritic"></div>
+            <p>92%</p>
+        </div>
+        <div class="buttons">
+            <div class="GameSpot"></div>
+            <p>9/10</p>
+        </div>
+        <div class="buttons">
+            <div class="Steam"></div>
+            <p>Overwhelmingly Positive</p>
+        </div>
+    </div>
+    <div class="trailer">
+        <p>Game trailer</p>
+        <iframe class="youtubeTrailer" width="1236" height="695"
+                src="https://www.youtube.com/embed/FqBj2IGg6Uw?si=T1mluLFJX_A3CRB6"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="quote"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit”</div>
 </div>
-<div class="ratings">
-    <div class="buttons">
-        <div class="IGN"></div>
-        <p>10/10</p>
-    </div>
-    <div class="buttons">
-        <div class="Metacritic"></div>
-        <p>92%</p>
-    </div>
-    <div class="buttons">
-        <div class="GameSpot"></div>
-        <p>9/10</p>
-    </div>
-    <div class="buttons">
-        <div class="Steam"></div>
-        <p>Overwhelmingly Positive</p>
-    </div>
-</div>
-<div class="trailer">
-    <p>Game trailer</p>
-    <iframe class = "youtubeTrailer" width="1236" height="695" src="https://www.youtube.com/embed/FqBj2IGg6Uw?si=T1mluLFJX_A3CRB6"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<div class="quote"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit”</div>
 <div class="screenshots">
+
     <p>Screenshots</p>
 
     <a href="#"><img src="./resources/Index/Celeste_screenshot_01.png" alt="a"></a>

@@ -33,7 +33,6 @@
             font-size: 100px;
             font-weight: bold;
             text-shadow: 2px 2px #000000;
-
             transition: height 0.5s ease;
         }
 
@@ -45,6 +44,7 @@
 
         .info {
             width: 75%;
+            max-width: 1500px;
             padding-top: 50px;
             font-size: 50px;
             position: absolute;
@@ -125,6 +125,27 @@
             background-position: right 50% bottom 45%;
         }
 
+        .wikiName{
+            height: 400px;
+            background-color: #e38686;
+            font-size: 150px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .picture{
+            display: flex;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('./resources/Wiki/intro.png');
+            height: 250px;
+            width:250px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -141,19 +162,25 @@
     <div class="image companyLogo"></div>
 </div>
 
+<div class = "wikiName">
+    <i class = "picture"></i>
+    <p>Chapters</p>
+</div>
+
 <div class="test">
     <div class="chapters Epilogue">
         <p class="title">Epiloque</p>
-            <p  class="info">Prologue is the very first chapter of Celeste. The chapter servers as a tutorial for walking and
-                jumping. It is very calm with almost nothing to kill you. The level is placed under the main mountain on
-                a
-                parking lot where the story begins. There is mostly snow on the ground </p>
+        <p class="info">Prologue is the very first chapter of Celeste. The chapter servers as a tutorial for walking and
+            jumping. It is very calm with almost nothing to kill you. The level is placed under the main mountain on
+            a
+            parking lot where the story begins. There is mostly snow on the ground </p>
     </div>
     <div class="chapters ForsakenCity">
         <p class="title">Forsaken City</p>
-            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, aliquid cum delectus dignissimos
-                eum harum iusto laudantium nam nihil officiis, quod repellendus saepe, vel velit vitae voluptate.
-                Cumque, totam?</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, aliquid cum delectus
+            dignissimos
+            eum harum iusto laudantium nam nihil officiis, quod repellendus saepe, vel velit vitae voluptate.
+            Cumque, totam?</p>
     </div>
     <div class="chapters OldSite">
         <p>Old Site</p>

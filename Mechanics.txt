@@ -1,0 +1,84 @@
+1	Mechanics 52
+
+1.1	Coyote Time/Jump
+1.2	Directional Spikes
+1.3	Fastbubbling
+1.4	Fastfalling (Fastfall)
+1.5	Input Buffering /----------------
+1.6	Screen Transition
+1.7	Liftboost
+
+2	Dash Tech
+
+2.1	Superdash (Super)
+2.2	Hyperdash (Hyper)
+2.3	Wavedash
+2.4	Extended Dashes /------
+2.5	Reverse Dashes
+2.6	Ultradash (Ultra)
+2.6.1	Chained Ultras /----------------
+2.6.2	Grounded Ultras /----------------
+2.6.2.1	Grounded Ultra Cancel /----------------
+2.6.3	Delayed Ultra /----------------
+2.7	Demodash (Demo)
+2.7.1	Demohyper /------
+2.7.2	Up Diagonal Demo (Diag Demo) /----------------
+2.8	Wallbounce (wounce, wb)
+
+3	Dashless Tech
+
+3.1	Bunnyhop (Bhop)
+3.2	Neutral Jump (Neutral)
+3.3	Cornerkick
+3.4	Crouch Jump / Crouch Climb /------
+3.5	Wallboost
+3.6	5 Jump /----------------
+3.7	Cornerboost (cb)
+3.7.1	Downward Cornerboosts /------
+3.7.2	6 Jump /----------------
+3.7.3	Double Cornerboost /----------------
+3.7.4	Reverse Cornerboost (rcb) /----------------
+3.7.5	Neutral Reverse Cornerboost /----------------
+3.7.6	Spiked Cornerboost
+3.7.7	Disappearing Block Cornerboost
+3.8	Spike Jumps
+
+4	Entity Tech
+
+4.1	Explosion Boost
+4.2	Fish / Ice / Oshiro / Seeker / Snowball Jump
+4.3	Bubble Super / Hyper
+4.4	Archie /----------------
+4.5	Cloud Jump / Spiked Cloud Jump
+4.5.1	Cloud Super/Hyper
+4.5.2	Cloud Hyper Bunnyhop /----------------
+4.6	Core Hyper/Super /----------------
+4.7	Dream Jump
+4.7.1	Dream Double-Jump /------
+4.7.2	Dream Hyper
+4.8	Featherboost /----------------
+4.9	Feather Super /----------------
+4.10	Seeker Bounce
+4.11	Theo/Jelly Regrabs
+4.11.1	Jelly Laddering
+4.11.2	Theo/Jelly Ultras /------
+4.12	Throwable Backboost (Backboost)
+4.13	Jellyvator / Theovator
+4.14	Waterboost
+4.15	Reform Tech
+4.15.1	Reform Kick
+4.15.2	Reform Boost (Cassette Boost) 
+4.15.2.1	Cassoosted Fuper/----------------
+
+5	Other Tech
+
+5.1	Binoculars Clip (Bino Clip)
+5.2	Bubsdrop
+5.3	Ceiling Pop (cpop)
+5.4	Cutscene Warps
+5.5	Pause Buffering
+5.6	Spinner Stunning
+5.6.1	Spinner Freeze
+5.7	Undemo dashing
+5.8	Half Stamina Climbing
+5.9	Kermit Dash/----------------

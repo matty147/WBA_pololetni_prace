@@ -17,169 +17,424 @@
     <script src="./js/index.js"></script>
 
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            height: auto;
-            background-image: linear-gradient(#f193bf, #000f20);
-        }
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        height: auto;
+        background-image: linear-gradient(#f193bf, #000f20);
+        width: 100vw;
+        overflow-x: hidden;
+    }
 
-        .banner {
-            background-image: url(./resources/Index/TheSummit-endscreen.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-            width: 100%;
-            /*background-position: right 50% bottom 0%;*/
+    .banner {
+        background-image: url(./resources/Index/TheSummit-endscreen.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        /*background-position: right 50% bottom 0%;*/
 
-        }
+    }
 
+    .logo-overlay {
+        background-image: url(./resources/Index/small_CELESTE_LOGO.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1750px;
+        height: 1529px;
+
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+
+    .ratings {
+        margin: 150px 50px;
+        height: auto;
+        width: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .buttons {
+        margin: 0 20px;
+        height: 250px;
+        width: 250px;
+        /* background-color: #84a7ef;*/
+        border-radius: 75px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .IGN {
+        background-image: url(./resources/Index/Ign.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+    }
+
+    .Metacritic {
+        background-image: url(./resources/Index/Metacritic.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+    }
+
+    .GameSpot {
+        background-image: url(./resources/Index/GameSpot.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+    }
+
+    .Steam {
+        background-image: url(./resources/Index/Steam.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+    }
+
+    .trailer {
+        font-size: 100px;
+        font-weight: bold;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailer > p {
+        padding-bottom: 50px;
+    }
+
+    .quote {
+        max-width: 1000px;
+        margin: 0 auto;
+        height: auto;
+        padding: 100px 0;
+        font-size: 100px;
+        color: #000000;
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .screenshots {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+
+    }
+
+    .screenshots > p {
+        font-size: 100px;
+        padding: 50px 0;
+        font-weight: bold;
+    }
+
+    .screenshots a {
+        margin-bottom: 60px;
+    }
+
+    .screenshots img {
+
+        width: 1000px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .clouds {
+        background-image: url(./resources/clouds_small.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+
+    .trailer {
+        font-size: 100px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailer p {
+        padding-bottom: 50px;
+    }
+
+    .youtubeTrailer {
+        width: 1236px;
+        height: 695px;
+    }
+
+    @media (min-width: 1700px) {
         .logo-overlay {
-            background-image: url(./resources/Index/small_CELESTE_LOGO.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 650px;
-            width: 800px;
-
-            position: absolute;
-            top: 65%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
-
-
-        .ratings {
-            margin: 150px 50px;
-            height: auto;
-            width: auto;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+            width: 1750px;
+            height: 1529px;
         }
 
         .buttons {
-            margin: 0 20px;
-            height: 250px;
-            width: 250px;
-            /* background-color: #84a7ef;*/
-            border-radius: 75px;
-            font-size: 25px;
-            font-weight: bold;
-            text-align: center;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            height: 400px;
+            width: 300px;
+            font-size: 60px;
         }
 
-        .IGN {
-            background-image: url(./resources/Index/Ign.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 150px;
-            width: 150px;
-        }
-
-        .Metacritic {
-            background-image: url(./resources/Index/Metacritic.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 150px;
-            width: 150px;
-        }
-
-        .GameSpot {
-            background-image: url(./resources/Index/GameSpot.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 150px;
-            width: 150px;
+        .IGN, .Metacritic, .GameSpot {
+            height: 300px;
+            width: 300px;
         }
 
         .Steam {
-            background-image: url(./resources/Index/Steam.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 150px;
-            width: 150px;
+            height: 300px;
+            width: 260px;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        .logo-overlay {
+            width: 1200px;
+            height: 1000px;
         }
 
+    }
+
+    @media (max-height: 1400px) {
+        .logo-overlay {
+            width: 1200px;
+            height: 1100px;
+        }
+    }
+
+    @media (min-height: 1400px) {
+        .banner {
+            height: 350px;
+        }
+
+        .logo-overlay {
+            top: 275px;
+        }
+    }
+
+    @media (max-width: 1300px) {
         .trailer {
-            font-size: 100px;
-            font-weight: bold;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-size: 60px;
         }
 
-        .trailer > p {
-            padding-bottom: 50px;
+        .youtubeTrailer {
+            width: 900px;
+            height: 500px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .logo-overlay {
+            width: 900px;
+            height: 800px;
         }
 
-        .quote {
-            max-width: 1000px;
-            margin: 0 auto;
-            height: auto;
-            padding: 100px 0;
-            font-size: 100px;
-            color: #000000;
-
-            display: flex;
-            justify-content: center;
-            text-align: center;
+        .trailer p {
+            font-size: 60px;
         }
 
-        .screenshots {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: end;
-
-        }
-
-        .screenshots > p {
-            font-size: 100px;
-            padding: 50px 0;
-            font-weight: bold;
-        }
-
-        .screenshots a {
-            margin-bottom: 60px;
+        .screenshots > p{
+            font-size: 80px;
         }
 
         .screenshots img {
+            width: 800px;
+        }
+    }
 
-            width: 1000px;
+    @media (max-width: 965px) {
+        .trailer {
+            font-size: 60px;
+        }
+
+        .youtubeTrailer {
+            width: 600px;
+            height: 350px;
+        }
+
+        .screenshots > p{
+            font-size: 70px;
+        }
+
+        .screenshots img {
+            width: 700px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .logo-overlay {
+            width: 600px;
+            height: 500px;
+        }
+
+        .ratings {
+            margin: 150px 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        .screenshots img {
+            width: 500px;
+        }
+    }
+
+    @media (max-height: 700px) {
+        .logo-overlay {
+            width: 650px;
+            height: 500px;
+            top: 75%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .trailer {
+            font-size: 25px;
+        }
+
+        .youtubeTrailer {
+            width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            aspect-ratio: 16/9;
+            padding: 20px 0;
         }
 
-        .clouds {
-            background-image: url(./resources/clouds_small.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: auto;
+        .trailer p {
+            margin: 0;
+            padding: 0;
         }
 
-        @media (min-height: 1400px) {
-            .logo-overlay {
-                width: 1750px;
-                height: 1529px;
-            }
-
-            @media (min-width: 200px) {
-                .youtubeTrailer {
-                    width: 80%;
-                    height: 1080px;
-                }
-            }
+        .quote{
+            font-size: 70px;
         }
-    </style>
-</head>
+    }
+
+    @media (max-width: 600px) {
+        .logo-overlay {
+            width: 400px;
+            height: 350px;
+        }
+
+        .buttons {
+            height: 400px;
+            width: 150px;
+            font-size: 40px;
+            gap: 0px;
+            margin: 0;
+        }
+
+        .ratings {
+            margin: 0 0 0 50px;
+            gap: 0;
+        }
+
+
+        .IGN, .Metacritic, .GameSpot {
+            height: 100px;
+            width: 100px;
+        }
+
+        .steamText {
+            font-size: 20px;
+        }
+
+        .Steam {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    @media (max-height: 500px) {
+        .logo-overlay {
+            width: 650px;
+            height: 500px;
+            top: 75%;
+        }
+
+        .trailer p {
+            font-size: 30px;
+        }
+
+        .screenshots img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .quote{
+            font-size: 50px;
+            padding: 20px 0;
+        }
+
+        .screenshots > p{
+            font-size: 50px;
+        }
+
+
+        .screenshots > a{
+            margin-bottom: 10px;
+        }
+
+        .screenshots img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .trailer p {
+            font-size: 40px;
+        }
+
+        .trailer{
+            margin:20px 0 50px 0;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        .logo-overlay {
+            width: 300px;
+            height: 250px;
+        }
+
+        .ratings {
+            margin: 0 0 0 10px;
+        }
+
+        .buttons{
+            height: 300px;
+        }
+
+    }
+
+</style>
 <body>
 <div class="menu">
     <i class="fa-solid fa-bars burger" id="burgerIcon"></i>
@@ -213,12 +468,13 @@
     </div>
     <div class="buttons">
         <div class="Steam"></div>
-        <p>Overwhelmingly Positive</p>
+        <p class="steamText">Overwhelmingly Positive</p>
     </div>
 </div>
 <div class="trailer">
     <p>Game trailer</p>
-    <iframe class="youtubeTrailer" width="1236" height="695"
+    <iframe class="youtubeTrailer" width="1236"
+            height="695"
             src="https://www.youtube.com/embed/FqBj2IGg6Uw?si=T1mluLFJX_A3CRB6"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

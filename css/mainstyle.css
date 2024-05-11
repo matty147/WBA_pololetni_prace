@@ -91,6 +91,13 @@ body {
     background-color: #0d0711;
 }
 
+.footer > p:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .footer > p {
     display: flex;
     justify-content: center;
@@ -106,17 +113,6 @@ body {
     justify-content: center;
     align-self: end;
     gap: 30px;
-}
-
-@media (max-height: 900px) {
-    .celeste {
-        height: 80px;
-        width: 375px;
-    }
-
-    .burger {
-        font-size: 75px;
-    }
 }
 
 @media (min-height: 1500px) {
@@ -151,7 +147,7 @@ body {
         width: 180px;
     }
 
-    .menu{
+    .menu {
         min-height: 200px;
     }
 }
@@ -170,8 +166,20 @@ body {
         height: 120px;
         width: 120px;
     }
-    .menu{
+
+    .menu {
         max-height: 250px;
+    }
+}
+
+@media (max-height: 900px) {
+    .celeste {
+        height: 80px;
+        width: 375px;
+    }
+
+    .burger {
+        font-size: 75px;
     }
 }
 
@@ -190,9 +198,19 @@ body {
         width: 90px;
     }
 
-    .menu{
+    .menu {
         height: 10vh;
         max-height: 200px;
+    }
+}
+
+@media (max-width: 950px) {
+    .footer > p:first-child {
+        text-align: center;
+        padding-top: 40px;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
     }
 }
 
@@ -211,8 +229,13 @@ body {
         width: 60px;
     }
 
-    .menu{
+    .menu {
         max-height: 100px;
+    }
+
+    .legalstuf{
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
 
@@ -231,7 +254,7 @@ body {
         width: 40px;
     }
 
-    .menu{
+    .menu {
         height: 10vh;
     }
 }

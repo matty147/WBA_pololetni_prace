@@ -30,6 +30,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .person {
@@ -62,6 +63,121 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        @media (min-width: 1500px) {
+            .people {
+                max-width: 2000px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center
+            }
+        }
+
+        @media (max-width: 1150px) {
+            .header {
+                font-size: 100px;
+            }
+
+            .person {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-items: center;
+                flex-direction: row;
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            .person:nth-child(even) {
+                flex-direction: row;
+                text-align: center;
+            }
+
+
+        }
+
+        @media (max-width: 900px) {
+            .wikiName > p {
+                font-size: 125px;
+            }
+
+            .person{
+                padding: 0 40px;
+            }
+        }
+
+        @media (max-width: 880px) {
+            .header {
+                font-size: 75px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .wikiName > p {
+                font-size: 100px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                font-size: 50px;
+            }
+
+            .person p {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .wikiName > p {
+                font-size: 75px;
+            }
+
+            .person img{
+                margin: 0;
+            }
+
+            .person{
+                padding: 10px 0;
+            }
+
+            .person p{
+                padding-top: 20px;
+                font-size: 25px;
+            }
+
+            .person h2{
+                font-size: 50px;
+                padding-top:20px ;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .picture {
+                margin: 30px;
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .wikiName > p {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .person p {
+                font-size: 20px;
+            }
+
+            .person h2
+            {
+                font-size: 40px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -80,7 +196,7 @@
 
 <div class="wikiName">
     <img src="resources/wiki/selfie_campfire_transparent.png" alt="a" width="250" height="250">
-    <p>characters</p>
+    <p>Characters</p>
 </div>
 
 <div class="people">
@@ -187,6 +303,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="footer">
     <p>This is a fanmade project that is in no way associated with Celeste or Extremely OK Games, Ltd.</p>

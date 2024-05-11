@@ -16,7 +16,7 @@
     <script src="./js/index.js"></script>
 
     <style>
-        body{
+        body {
             background-color: #0d0711;
         }
 
@@ -51,12 +51,16 @@
             gap: 100px;
         }
 
-        .row {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+        .devs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 100px;
+        }
+
+        .dev {
+            background-color: #ffed00;
+            padding: 20px;
+            text-align: center;
         }
 
         .chevy {
@@ -99,6 +103,104 @@
             padding: 20px;
         }
 
+        @media (max-width: 1500px) {
+
+            .devs {
+                gap: 50px;
+
+            }
+
+            .dev {
+                width: 400px;
+            }
+
+            .dev > img {
+                width: 100%;
+
+            }
+
+            .chevy {
+                height: auto;
+            }
+
+            .farewell{
+                width: 80%;
+            }
+
+        }
+
+        @media (max-width: 1100px) {
+
+            .devs {
+                gap: 25px;
+
+            }
+
+            .dev {
+                width: 300px;
+            }
+
+            .dev > h2 {
+                font-size: 40px;
+            }
+
+            .dev > h3 {
+                font-size: 30px;
+            }
+
+            .dev > img {
+                width: 100%;
+            }
+
+            .chevy {
+                height: auto;
+            }
+        }
+
+        .title {
+            font-size: 80px;
+            padding: 50px;
+        }
+
+        @media (max-width: 850px) {
+            .devs {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .dev {
+                width: 400px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .dev {
+                width: 300px;
+            }
+
+            .devs {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border: 0;
+                padding: 20px 0;
+            }
+
+            .farewell{
+                padding: 30px 0;
+            }
+        }
+
+        @media (max-width: 450px) {
+            h1 {
+                font-size: 45px;
+            }
+
+            .dev{
+                width: 80%;
+            }
+        }
+
     </style>
 
 </head>
@@ -118,59 +220,52 @@
 </div>
 <div class="mainframe">
     <div class="title">
-        <h1>About us</h1>
-        <p> We are a small indie game studio.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-            distinctio, dolorem ea eligendi eveniet ex impedit ipsam itaque maiores natus nobis officiis optio pariatur
-            praesentium quidem ratione tenetur unde vero. </p>
+        <h1>Meet the team</h1>
     </div>
     <div class="devs">
-        <div class="row">
-            <div class="dev">
-                <img class="mainFrame" src="./resources/team/maddy.png" alt="Maddy Throson"/>
-                <h2 class="name">Maddy throson</h2>
-                <h3 class="work">Director of R&D</h3>
-            </div>
-            <div class="dev">
-                <img class="mainFrame" src="./resources/team/noel.png" alt="Noel Berry"/>
-                <h2 class="name">Noel Berry</h2>
-                <h3 class="work">Computer Programmer</h3>
-            </div>
+        <div class="dev">
+            <img class="" src="./resources/team/maddy.png" alt="Maddy Throson"/>
+            <h2 class="name">Maddy throson</h2>
+            <h3 class="work">Director of R&D</h3>
         </div>
-        <div class="row">
-            <div class="dev">
-                <img class="mainFrame" src="./resources/team/amora.png" alt="Amora B."/>
-                <h2 class="name">Amora Bettany</h2>
-                <h3 class="work">Human Synthesis Technician</h3>
-            </div>
-            <div class="dev">
-                <img class="mainFrame" src="./resources/team/pedro.png" alt="Pedro Medeiros"/>
-                <h2 class="name">Pedro Medeiros</h2>
-                <h3 class="work">Pixel Picker</h3>
-            </div>
+        <div class="dev">
+            <img class="mainFrame" src="./resources/team/noel.png" alt="Noel Berry"/>
+            <h2 class="name">Noel Berry</h2>
+            <h3 class="work">Computer Programmer</h3>
         </div>
-        <div class="row">
-            <div class="dev">
-                <img class="mainFrame" src="./resources/team/heidy.png" alt="Heidy Motta"/>
-                <h2 class="name">Heidy Motta</h2>
-                <h3 class="work">Responsibility Haver</h3>
-            </div>
-            <div class="dev">
-                <img class="mainFrame" src="./resources/team/lena.png" alt="Lena Raine"/>
-                <h2 class="name">Lena Raine</h2>
-                <h3 class="work">Melody Mage</h3>
-            </div>
+
+
+        <div class="dev">
+            <img class="mainFrame" src="./resources/team/amora.png" alt="Amora B."/>
+            <h2 class="name">Amora Bettany</h2>
+            <h3 class="work">Human Synthesis Technician</h3>
         </div>
-        <div class="row">
-            <div class="dev">
-                <img class="mainFrame" src="./resources/team/powerup.png" alt="Power Up Audio"/>
-                <h2 class="name">Power Up Audio</h2>
-                <h3 class="work">Ear Ticklers</h3>
-            </div>
-            <div class="dev">
-                <img class="mainFrame chevy" src="./resources/team/chevy.jpg" alt="Chevy Ray"/>
-                <h2 class="name">Chevy Ray</h2>
-                <h3 class="work">Dog Wrangler</h3>
-            </div>
+        <div class="dev">
+            <img class="mainFrame" src="./resources/team/pedro.png" alt="Pedro Medeiros"/>
+            <h2 class="name">Pedro Medeiros</h2>
+            <h3 class="work">Pixel Picker</h3>
+        </div>
+
+        <div class="dev">
+            <img class="mainFrame" src="./resources/team/heidy.png" alt="Heidy Motta"/>
+            <h2 class="name">Heidy Motta</h2>
+            <h3 class="work">Responsibility Haver</h3>
+        </div>
+        <div class="dev">
+            <img class="mainFrame" src="./resources/team/lena.png" alt="Lena Raine"/>
+            <h2 class="name">Lena Raine</h2>
+            <h3 class="work">Melody Mage</h3>
+        </div>
+
+        <div class="dev">
+            <img class="mainFrame" src="./resources/team/powerup.png" alt="Power Up Audio"/>
+            <h2 class="name">Power Up Audio</h2>
+            <h3 class="work">Ear Ticklers</h3>
+        </div>
+        <div class="dev">
+            <img class="mainFrame chevy" src="./resources/team/chevy.jpg" alt="Chevy Ray"/>
+            <h2 class="name">Chevy Ray</h2>
+            <h3 class="work">Dog Wrangler</h3>
         </div>
     </div>
 </div>

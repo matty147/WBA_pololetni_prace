@@ -37,18 +37,12 @@
             height: 375px;
         }
 
-        .header {
-            Font-size: 150px;
-            text-align: center;
-            margin-top: 50px;
-        }
-
         .display {
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: #a4a4a4;
-            margin-top: 30px;
+            margin-top: 0;
             margin-bottom: 75px;
             width: 100%;
         }
@@ -64,14 +58,6 @@
             margin: 30px;
         }
 
-        .test {
-            height: 100%;
-        }
-
-        .definitions {
-
-        }
-
         .definitions {
             margin: 50px;
             font-size: 25px;
@@ -85,6 +71,201 @@
         .definition > h3 {
             margin: 50px 0 10px 0;
             font-size: 50px;
+        }
+
+        @media (max-width: 1900px) {
+            .picture {
+                width: 300px;
+                height: 300px;
+            }
+
+            .display h2 {
+                font-size: 35px;
+            }
+
+            .display img {
+                margin: 30px 0;
+            }
+        }
+
+        @media (max-width: 1600px) {
+            .bigger img {
+                width: 300px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            .picture {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            .bigger img {
+                width: 200px;
+                height: auto;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .bigger h2{
+                font-size: 30px ;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            .wingedStrawberry {
+                width: 400px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .wikiName > p {
+                font-size: 100px;
+            }
+
+            .wikiName > img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .wingedStrawberry {
+                width: 300px;
+                height: auto;
+            }
+
+            .picture {
+                width: 200px;
+                height: 200px;
+            }
+
+            .display h2 {
+                font-size: 30px;
+                gap: 25px
+            }
+        }
+
+        @media (max-width: 900px) {
+            .picture {
+                width: 150px;
+                height: 150px;
+            }
+
+            .display h2 {
+                font-size: 20px;
+            }
+
+            .wingedStrawberry {
+                margin-bottom: 0;
+            }
+
+            .definition h3 {
+                font-size: 40px;
+            }
+
+            .definition p {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 850px) {
+            .wikiName {
+                flex-wrap: wrap;
+                height: auto;
+            }
+
+            @media (max-width: 800px) {
+                .display {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #a4a4a4;
+                    margin-top: 0;
+                    margin-bottom: 75px;
+                    width: 100%;
+                }
+
+                .display div {
+                    text-align: center;
+                    flex: 1 0 50%;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .bigger img {
+                    width: 80%;
+                    height: auto;
+                }
+
+                .bigger h2 {
+                    font-size: 30px;
+                    margin-top: 10px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    flex-grow: 1;
+                    align-self: center;
+                }
+            }
+
+
+
+            .wikiName > p {
+                padding-bottom: 10px;
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .display {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: #a4a4a4;
+                margin-top: 0;
+                margin-bottom: 75px;
+                width: 100%;
+            }
+
+            .display div {
+                text-align: center;
+                flex: 1 0 50%;
+                padding: 10px;
+            }
+
+            .wingedStrawberry {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+
+            .definitions {
+                margin: 50px 20px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .display {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .definitions {
+                margin: 50px 10px;
+            }
         }
 
     </style>
@@ -110,21 +291,21 @@
 </div>
 
 <div class="collectables">
-    <h2 class="header">Collactables</h2>
     <div class="display">
-        <div class="test">
+        <div>
             <img src="./resources/collectables/berry.png" alt="a" class="picture">
             <h2>Strawberry</h2>
         </div>
-        <div class="test">
-            <img src="./resources/collectables/casete.png" alt="a" width="350" height="350">
+        <div>
+            <img src="./resources/collectables/casete.png" alt="a" width="350" height="350" class="picture">
             <h2>Cassette Tapes</h2>
         </div>
-        <div class="test">
-            <img src="./resources/collectables/wingedberry.png" alt="a" width="512" height="312">
+        <div>
+            <img src="./resources/collectables/wingedberry.png" alt="a" width="512" height="312"
+                 class="wingedStrawberry">
             <h2>Winged strawberry</h2>
         </div>
-        <div class="test">
+        <div>
             <img src="./resources/collectables/seed00_scaled_35x_pngcrushed.png" alt="a" class="picture">
             <h2>Strawberry Seed</h2>
         </div>
@@ -163,20 +344,20 @@
 
 
 <div class="collectables">
-    <div class="display">
-        <div class="test">
+    <div class="display bigger">
+        <div>
             <img src="./resources/collectables/Goldenidle00.png" alt="a" class="picture">
             <h2>Golden Strawberries</h2>
         </div>
-        <div class="test">
+        <div>
             <img src="./resources/collectables/darkblueheart.png" alt="a" width="350" height="350" id="heart">
             <h2>Hearts</h2>
         </div>
-        <div class="test">
+        <div>
             <img src="./resources/collectables/Goldenwings00.png" alt="a" width="512" height="312">
             <h2>Winged Golden Berry</h2>
         </div>
-        <div class="test">
+        <div>
             <img src="./resources/collectables/moonberry.png" alt="a" width="512" height="312">
             <h2>Moon Berry</h2>
         </div>

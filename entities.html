@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collectables</title>
+    <link rel="stylesheet" href="./css/reset.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          media="screen"/>
+    <link rel="stylesheet" href="./css/mainstyle.css"/>
+    <link rel="shortcut icon" href="./resources/icon.png"/>
+    <script src="js/main.js"></script>
+    <script src="./js/index.js"></script>
+
+    <style>
+
+        body {
+            background-color: #c46969;
+        }
+
+        .wikiName {
+            height: 400px;
+            background-color: #e38686;
+            font-size: 150px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .picture {
+            margin: 30px;
+            width: 375px;
+            height: 375px;
+        }
+
+        .header {
+            Font-size: 150px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #a4a4a4;
+            margin-top: 30px;
+            margin-bottom: 75px;
+            width: 100%;
+        }
+
+        .display h2 {
+            font-size: 50px;
+            text-align: center;
+            align-self: end;
+            font-weight: bold;
+        }
+
+        .display img {
+            margin: 30px;
+        }
+
+        .container {
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 200px;
+        }
+
+        .container > img {
+            width: 80%;
+            height: auto;
+        }
+
+        .container > h2 {
+            font-size: 75px;
+            padding: 40px;
+        }
+
+        .container > p {
+            font-size: 50px;
+            width: 80%;
+        }
+
+        .navigation {
+            background-color: #c4c3c3;
+            height: auto;
+            width: 100%;
+            font-size: 50px;
+            padding: 40px 100px;
+        }
+
+        .navigation hr {
+            background-color: #8f8f8f;
+            height: 5px;
+            border: 0;
+            width: 100%;
+            display: flex;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navigation ol ol {
+            margin-left: 20px;
+        }
+
+
+        .navigation ol ol {
+            list-style-type: decimal;
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        .navigation ol ol li {
+            margin-bottom: 5px;
+        }
+
+        ol {
+            counter-reset: item
+        }
+
+        li {
+            display: block
+        }
+
+        li:before {
+            content: counters(item, ".") " ";
+            counter-increment: item;
+        }
+
+        @media (max-width: 1200px ) {
+            .wikiName > p {
+                font-size: 100px;
+            }
+
+            .wikiName > img {
+                width: 400px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1000px ) {
+            .navigation {
+                font-size: 40px;
+                padding: 10px 30px;
+            }
+
+            .navigation h2 {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 900px ) {
+            .header {
+                font-size: 100px;
+            }
+        }
+
+        @media (max-width: 800px ) {
+            .container > p {
+                font-size: 40px;
+                width: 90%;
+            }
+
+            .container > h2 {
+                font-size: 65px;
+            }
+        }
+
+        @media (max-width: 700px ) {
+            .wikiName > img {
+                width: 150px;
+                height: auto;
+            }
+
+            .wikiName {
+                flex-wrap: wrap;
+                height: 260px;
+            }
+
+            .wikiName > p {
+                padding-bottom: 10px;
+                font-size: 50px;
+            }
+
+            .container > h2 {
+                font-size: 50px;
+            }
+
+            .container > p {
+                font-size: 30px;
+            }
+
+            .container {
+                padding-bottom: 100px;
+            }
+
+            .container > img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                font-size: 70px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .navigation {
+                font-size: 30px;
+                padding: 10px 30px;
+            }
+
+            .navigation h2 {
+                font-size: 40px;
+            }
+
+            .container > p {
+                font-size: 25px;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="menu">
+    <i class="fa-solid fa-bars burger" id="burgerIcon"></i>
+    <div class="burgerMenu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="wiki.html">Game wiki</a>
+        <a href="othergames.html">Other games</a>
+        <a href="aboutus.html">About us</a>
+    </div>
+    <div class="celeste">
+    </div>
+    <div class="image companyLogo"></div>
+</div>
+<div class="wikiName">
+    <img src="resources/wiki/cloud.png" alt="a" width="512" height="auto">
+    <p>Entities</p>
+</div>
+
+<div class="navigation">
+    <h2>Contents</h2>
+    <hr>
+    <ol type="i">
+        <li><a href="#BasicTech">Basic Tech</a>
+            <ol>
+                <li><a href="#bird">Bird</a></li>
+                <li><a href="#blade">Blade</a></li>
+                <li><a href="#bumper">bumper</a></li>
+                <li><a href="#cassetteblock">Cassette Block</a></li>
+                <li><a href="#cloud">Cloud</a></li>
+                <li><a href="#clutter">Clutter</a></li>
+                <li><a href="#coreblock">Core Block</a></li>
+                <li><a href="#coreswitch">Core Switch</a></li>
+                <li><a href="#crumbleblock">Crumble Block</a></li>
+                <li><a href="#crystalheartgate">Crystal Heart Gate</a></li>
+                <li><a href="#dashrefill">Dash Refills</a></li>
+                <li><a href="#doubledashrefill">Double Dash Refill</a></li>
+                <li><a href="#dashswitch">Dash Switch</a></li>
+                <li><a href="#dreamblock">Dream Blocks</a></li>
+                <li><a href="#dustbunnies">Dust Bunnies</a></li>
+                <li><a href="#fallingblock">Falling Block</a></li>
+                <li><a href="#feather">Feather</a></li>
+                <li><a href="#spring">Springs</a></li>
+                <li><a href="#fireball">Fireballs</a></li>
+                <li><a href="#greenbubble">Green Bubble</a></li>
+                <li><a href="#icewall">Ice Wall</a></li>
+                <li><a href="#kevin">Kevin</a></li>
+                <li><a href="#lightingbox">Lightning Breaker Box</a></li>
+                <li><a href="#movingblock">Moving Block</a></li>
+                <li><a href="#pufferfish">Pufferfish</a></li>
+                <li><a href="#snowball">Snowball</a></li>
+                <li><a href="#spikes">Spikes</a></li>
+            </ol>
+        </li>
+    </ol>
+</div>
+
+
+<div class="tech">
+    <h2 class="header" id="BasicTech">Entities</h2>
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="bird">Bird</h2>
+        <p>The Bird, as an interactable entity in Farewell, flings Madeline rightwards whenever she is in its range,
+            refilling her dash.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="blade">Blade</h2>
+        <p>Blades, and Stars (a retextured version of Blades), spin either following a line or in a circular motion,
+            killing Madeline if she ends up touching it.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="bumper">Bumper</h2>
+        <p>Bumpers are circular brown platforms with blue borders and serious faces that bounce the player in the
+            direction the player touches. Bumpers temporarily shrink and switch off for a fraction of a second before
+            reactivating each time a bumper is touched. When in "hot" mode in Core, Bumpers become angry and gain
+            spikes, killing Madeline upon contact</p>
+    </div>
+</div>
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="cassetteblock">Cassette Block</h2>
+        <p>Cassette Blocks are alternating blocks which shift to a beat. They are often paired with 8-bit versions of a
+            chapter's music. They appear in all Cassette Tape rooms, the last room of every B-Side, and Chapter 9, where
+            they also appear in three-color (blue, pink, yellow) and four-color (blue, pink, yellow, green) variants.
+            Only one color is active at a time: for example, when a block switches to pink, Madeline will fall through
+            the blue block she was standing on before. Cassette Blocks may also contain spikes on them, which kill the
+            player on contact.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="cloud">Cloud</h2>
+        <p>Clouds are bouncy platforms which first squish downwards when Madeline lands on one, and then launch her
+            upwards. Buffering a jump while standing on a cloud allows Madeline to gain large amounts of height.
+            Blue/White Clouds are permanently seated, while Pink Clouds despawn after propelling Madeline upwards (and
+            subsequently respawn).</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="clutter">Clutter</h2>
+        <p>Clutter is tiles liberally placed in the Celestial Resort. There are three types of clutter in Celeste:
+            books, clothes, and boxes. Pressing a switch for the corresponding type of clutter will remove all clutter
+            of that type from the level.</p>
+    </div>
+</div>
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="coreblock">Core Block</h2>
+        <p>Fire platforms are the much more active form of Core Blocks. When Madeline stands on or grabs onto one, the
+            platform gently moves alongside Madeline for a moment before slinging in the opposite direction, flinging
+            Madeline away.
+            In Core, it only exists while in "hot" mode; it is replaced by Ice Platforms in "cold" mode.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="coreswitch">Core Switch</h2>
+        <p>A switch that permits toggling between "hot" mode and "cold" mode in Chapter 8: Core. Some switches are
+            "bidirectional", allowing switching between hot and cold mode; others are unidirectional, only allowing
+            switching 'to' hot mode or 'to' cold mode, deactivating afterwards.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="crumbleblock">Crumble Block</h2>
+        <p>Crumble Blocks are gray, unstable platforms which disintegrate shortly after Madeline either grabs them or
+            stands on them, and vanish instantly if Madeline jumps off. They respawn a few seconds later.</p>
+    </div>
+</div>
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="crystalheartgate">Crystal Heart Gate</h2>
+        <p>Crystal Heart Gates are cyan-colored barriers that block Madeline from advancing unless she has a set number
+            of crystal hearts collected within a given save file. If Madeline stands to the left of a closed crystal
+            heart gate, it will start counting the number of hearts she has; if there are enough, the gate will open up
+            from the center, horizontally, with a "flash" line effect. 8A requires 4 hearts, 8B and Farewell require 15,
+            and 8C requires 23 hearts.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="dashrefill">Dash Refills</h2>
+        <p> A diamond which, upon touching, if Madeline isn't at her full number of dashes or if her stamina is running
+            low, will refill her dashes to the maximum possible (or one dash in Farewell), and her stamina to the
+            maximum value of 110.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="doubledashrefill">Double Dash Refill</h2>
+        <p>A double diamond which, upon touching, if Madeline doesn't already have two dashes or is running low on
+            stamina, will refill her dashes to 2 regardless of her maximum number of dashes, and refill her stamina to
+            the maximum value of 110. This dash will not refill itself after Madeline uses it up.</p>
+    </div>
+</div>
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="dashswitch">Dash Switch</h2>
+        <p>A switch, typically green or yellow, which, when dashed into or bashed via a Theo Crystal, a seeker, or a
+            jellyfish, will open up a Temple Gate, allowing Madeline to progress.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="dreamblock">Dream Blocks</h2>
+        <p> A dream block is an extremely versatile block that Madeline can dash through, jump off, climb, jump while
+            exiting the block, and even hyperdash out of one. A deactivated version appears in Old Site A-Side.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="dustbunnies">Dust Bunnies</h2>
+        <p> Dust Bunnies are lethal obstacles, black in color but outlined in red. They can be static or moving,
+            effectively acting the same way as either blades or spinners. They are prevalent in Celestial Resort. Mr.
+            Oshiro emits them when stressed.</p>
+    </div>
+</div>
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="fallingblock">Falling Block</h2>
+        <p>Some usually unmarked blocks can fall either when Madeline crosses a trigger or interacts with them (grabs or
+            lands on them). These often appear like any other block, and may have spikes or other hazards attached to
+            them.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="feather">Feather</h2>
+        <p> Feathers are entities which put Madeline into feather mode for approximately five seconds. In feather mode,
+            Madeline is constantly moving, and can go in any direction (compass directions on the keyboard, unlimited on
+            the controller). She is also not affected by gravity during this time.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="spring">Springs</h2>
+        <p> Springs are entities that, upon contact, bounce Madeline, a Theo Crystal, a Pufferfish, or a Jellyfish in
+            the direction the springs are facing. They can be oriented left, right, or up.</p>
+    </div>
+</div>
+
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="fireball">Fireball</h2>
+        <p>Hazardous balls of fire are found in the core, moving along set paths one after another. They move faster
+            than their icy counterpart, and are lethal.
+            In Core, it only exists while in "hot" mode; it is replaced by Ice Balls in "cold" mode.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="greenbubble">Green Bubble</h2>
+        <p> Hazardous chunks of ice are found within the Core, moving along set paths one after another. They move
+            slower than their fiery counterpart, and while they are lethal when approached from the left, right, or
+            bottom, they can be bounced off of from the top. Doing so will restore Madeline's dash outside of the Core
+            (due to the altered dash mechanics) and destroy the ice ball until Madeline dies or triggers a screen
+            transition.
+            In Core, it only exists while in "cold" mode; it is replaced by Fireballs in "hot" mode.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="icewall"> Ice Wall</h2>
+        <p>An Ice Wall has all the properties of a standard wall, except you cannot grab them, meaning you can still
+            wall kick, wall bounce, neutral, etc. off them.
+            In Core, it only exists while in "cold" mode; it is replaced by Conveyor Walls in "hot" mode.</p>
+    </div>
+</div>
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="kevin">Kevin</h2>
+        <p>Kevin blocks are brown and have a face on them. Once Madeline dashes into any of its sides with a blue
+            outline, Madeline will bounce up, and the Kevin block will awaken. The block will continuously move towards
+            whatever side Madeline dashed into, making an "ororororo" sound, until it hits a wall or Madeline dashes
+            into another one of its sides. Once it hits a wall, the Kevin block slowly returns to its original
+            position.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="lightingbox">Lightning Breaker Box</h2>
+        <p> Lightning Breaker Boxes are found exclusively in Chapter 9, in Power Source, Reconciliation, and Farewell
+            checkpoints. Dashing into it twice will destroy it, eliminating all electricity in the room. Destroying the
+            box will also restore your dash. In Reconciliation, it is required to destroy them to let the bird
+            proceed.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="movingblock">Moving Block</h2>
+        <p>Moving blocks are black, with a blue arrow in the middle. Grabbing or stepping on the block will activate it,
+            turning the arrow green and making the block move in whatever direction the arrow is pointing. Some moving
+            blocks have blue sides, allowing Madeline to control the block by standing on/grabbing the side and pressing
+            a direction perpendicular to the direction the arrow is pointing. If a Moving block hits a wall for too
+            long, the arrow will turn into a red X and the block will shatter, respawning at its original position
+            shortly afterward.</p>
+    </div>
+</div>
+<div class="tech">
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <h2 id="pufferfish">Pufferfish</h2>
+        <p>Pufferfish are found in Farewell. A line can be seen when approaching it. If you touch the dots below the
+            line, it will explode, propelling you in the direction you approached it from. Otherwise, bouncing on it
+            will make it go down; it is required on many levels with pufferfish. They can also activate touch
+            switches.</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <h2 id="snowball">Snowball</h2>
+        <p> Snowballs are constantly launched from the right side of the screen, forcing Madeline to avoid them. They
+            act similarly to Mr. Oshiro's boss form: if they approach underneath, Madeline dies, but jumping on them
+            allows her to bounce and refill her dash(es).</p>
+    </div>
+
+
+    <div class="container">
+        <img src="resources/index/celeste_screenshot_03.png" alt="a">
+        <h2 id="spikes"> Spikes</h2>
+        <p>Spikes are tiny obstacles, usually found grouped, that instantly kill Madeline upon contact unless she
+            is moving in their direction (away from them). They appear in every numbered chapter, with chapters 4, part
+            of 5, and 6 having their reskins. They can be attached to other entities, notably Cassette Blocks where they
+            are colored the same as the block they are connected to.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>This is a fanmade project that is in no way associated with Celeste or Extremely OK Games,
+        Ltd.</p>
+    <div class="legalstuf">
+        <p>Privacy policy</p>
+        <p>About</p>
+        <p>Disclaimers</p>
+        <p>Terms of Use</p>
+        <p>Contacts</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -64,7 +64,7 @@
             margin: 30px;
         }
 
-        .test {
+        .container {
             height: auto;
             display: flex;
             align-items: center;
@@ -73,17 +73,17 @@
             padding-bottom: 200px;
         }
 
-        .test > img {
+        .container > img {
             width: 80%;
             height: auto;
         }
 
-        .test > h2 {
+        .container > h2 {
             font-size: 75px;
             padding: 40px;
         }
 
-        .test > p {
+        .container > p {
             font-size: 50px;
             width: 80%;
         }
@@ -137,6 +137,99 @@
             counter-increment: item;
         }
 
+        @media (max-width: 1200px ) {
+            .wikiName > p {
+                font-size: 100px;
+            }
+
+            .wikiName > img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 1000px ) {
+            .navigation {
+                font-size: 40px;
+                padding: 10px 30px;
+            }
+
+            .navigation h2 {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 900px ) {
+            .header {
+                font-size: 100px;
+            }
+        }
+
+        @media (max-width: 800px ) {
+            .container > p {
+                font-size: 40px;
+                width: 90%;
+            }
+
+            .container > h2 {
+                font-size: 65px;
+            }
+        }
+
+        @media (max-width: 700px ) {
+            .wikiName > img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .wikiName {
+                flex-wrap: wrap;
+                height: 260px;
+            }
+
+            .wikiName > p {
+                padding-bottom: 10px;
+                font-size: 50px;
+            }
+
+            .container > h2 {
+                font-size: 50px;
+            }
+
+            .container > p {
+                font-size: 30px;
+            }
+
+            .container{
+                padding-bottom: 100px;
+            }
+
+            .container >img{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                font-size: 70px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .navigation {
+                font-size: 30px;
+                padding: 10px 30px;
+            }
+
+            .navigation h2 {
+                font-size: 40px;
+            }
+
+            .container > p {
+                font-size: 25px;
+            }
+        }
+
     </style>
 
 
@@ -178,7 +271,7 @@
 
 <div class="tech">
     <h2 class="header" id="BasicTech">Basic Tech</h2>
-    <div class="test">
+    <div class="container">
         <img src="resources/index/celeste_screenshot_01.png" alt="a">
         <h2 id="jump">Coyote Time/Jump</h2>
         <p>Madeline can input a jump for 5 so-called "coyote" frames after walking off a ledge, allowing for more
@@ -187,14 +280,14 @@
     </div>
 
 
-    <div class="test">
+    <div class="container">
         <img src="resources/index/celeste_screenshot_02.png" alt="a">
         <h2>Directional Spikes</h2>
         <p>Spikes won't hurt Madeline if she collides with them as long as she's moving in the direction they point.</p>
     </div>
 
 
-    <div class="test">
+    <div class="container">
         <img src="resources/index/celeste_screenshot_03.png" alt="a">
         <h2>Input Buffering</h2>
         <p>Attempting to perform an action that's not currently possible will "buffer" (store) the input for the next 5

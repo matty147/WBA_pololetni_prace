@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .menu {
@@ -59,7 +60,7 @@ body {
 
 .celeste {
     display: flex;
-    background-image: url(../resources/Wiki/Celeste-text.png);
+    background-image: url(../resources/wiki/celeste-text.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 120px;
@@ -75,7 +76,7 @@ body {
 }
 
 .companyLogo {
-    background-image: url(../resources/Index/exok-mark.png);
+    background-image: url(../resources/index/exok-mark.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 150px;

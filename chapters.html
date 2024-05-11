@@ -16,9 +16,6 @@
 
     <style>
 
-        .test {
-            height: auto;
-        }
 
         .chapters {
             display: flex;
@@ -34,6 +31,7 @@
             font-weight: bold;
             text-shadow: 2px 2px #000000;
             transition: height 0.5s ease;
+            background-size: cover;
         }
 
         .chapters:hover {
@@ -45,7 +43,7 @@
         .info {
             width: 75%;
             max-width: 1500px;
-            padding-top: 50px;
+            padding-top: 30px;
             font-size: 50px;
             position: absolute;
             opacity: 0;
@@ -60,72 +58,72 @@
             opacity: 1;
         }
 
-        .chapters:hover > .title {
+        .chapters:hover > h2 {
             padding-top: 50px;
         }
 
         .Epilogue {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Epilogue.jpg');
+            background-image: url('resources/wiki/chapters/epilogue.jpg');
             background-position: right 50% bottom 25%;
         }
 
         .ForsakenCity {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Forsaken_City.jpg');
+            background-image: url('resources/wiki/chapters/forsaken_city.jpg');
             background-position: right 50% bottom 80%;
         }
 
         .OldSite {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Old_Site.jpg');
+            background-image: url('resources/wiki/chapters/Old_Site.jpg');
             background-position: right 50% bottom 65%;
         }
 
         .CelestialResort {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Celestial_Resort.jpg');
+            background-image: url('resources/wiki/chapters/celestial_resort.jpg');
             background-position: right 50% bottom 65%;
         }
 
 
         .GoldenRidge {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Golden_Ridge.jpg');
+            background-image: url('resources/wiki/chapters/Golden_Ridge.jpg');
             background-position: right 50% bottom 45%;
         }
 
         .MirrorTemple {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Mirror_Temple.jpg');
+            background-image: url('resources/wiki/chapters/Mirror_Temple.jpg');
             background-position: right 50% bottom 50%;
         }
 
         .Reflection {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Reflection.jpg');
+            background-image: url('resources/wiki/chapters/Reflection.jpg');
             background-position: right 50% bottom 75%;
         }
 
         .TheSummit {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/The_Summit.jpg');
+            background-image: url('resources/wiki/chapters/The_Summit.jpg');
             background-position: right 50% bottom 65%;
         }
 
         .Core {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Core.jpg');
+            background-image: url('resources/wiki/chapters/core.jpg');
             background-position: right 50% bottom 5%;
         }
 
         .Farewell {
             display: flex;
-            background-image: url('./resources/Wiki/chapters/Farewell.jpg');
+            background-image: url('resources/wiki/chapters/farewell.jpg');
             background-position: right 50% bottom 45%;
         }
 
-        .wikiName{
+        .wikiName {
             height: 400px;
             background-color: #e38686;
             font-size: 150px;
@@ -136,19 +134,154 @@
             justify-content: center;
         }
 
-        .picture{
-            display: flex;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url('./resources/Wiki/intro.png');
-            height: 250px;
-            width:250px;
+        @media (min-width: 1900px) {
+            .chapters {
+                width: 100%;
+                height: 200px;
+                padding: 150px 0;
+            }
+
+            .chapters > h2 {
+                font-size: 150px;
+            }
+
+            .chapters:hover {
+                height: 600px;
+                padding-bottom: 150px;
+                padding-top: 0px;
+            }
+
+            .info {
+                font-size: 60px;
+                max-width: 80%;
+            }
         }
 
-@media (max-width:100px)
-{
+        @media (min-width: 3000px) {
+            .chapters {
+                height: 350px;
+                padding: 150px 0;
+            }
 
-}
+            .chapters > h2 {
+                font-size: 175px;
+            }
+
+            .chapters:hover {
+                height: 600px;
+            }
+
+            .info {
+                font-size: 75px;
+            }
+        }
+
+        @media (max-width: 1900px) {
+            .chapters > h2 {
+                font-size: 100px;
+            }
+
+            .info {
+                font-size: 45px;
+            }
+        }
+
+        @media (max-width: 1700px) {
+
+            .chapters > h2 {
+                font-size: 75px;
+            }
+
+            .info {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+
+            .chapters > h2 {
+                font-size: 75px;
+            }
+
+            .info {
+                font-size: 30px;
+            }
+
+            .chapters {
+                height: 200px;
+            }
+
+            .wikiName > p{
+                font-size: 100px;
+            }
+
+            .wikiName > img{
+                width:200px;
+                height:200px;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .chapters > h2 {
+                font-size: 50px;
+            }
+
+            .chapters:hover > h2 {
+                padding-top: 10px;
+            }
+
+            .info {
+                font-size: 20px;
+                width: 90%;
+            }
+
+            .chapters:hover {
+                height: 300px;
+            }
+
+            .wikiName > img{
+                width:150px;
+                height:150px;
+            }
+
+            .wikiName{
+                flex-wrap: wrap;
+                height: 260px;
+            }
+            .wikiName > p{
+                padding-bottom: 10px;
+                font-size: 50px;
+            }
+
+        }
+
+        @media (max-width: 450px) {
+
+            .chapters > h2 {
+                font-size: 40px;
+            }
+
+            .chapters:hover > h2 {
+                padding-top: 5px;
+            }
+
+            .chapters:hover > p {
+                padding-top: 0;
+            }
+
+            .info {
+                font-size: 14px;
+                width: 90%;
+            }
+            .chapters{
+                height: 100px;
+            }
+
+            .chapters:hover {
+                height: 200px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -165,73 +298,74 @@
     <div class="image companyLogo"></div>
 </div>
 
-<div class = "wikiName">
-    <img src="./resources/Wiki/intro.png" alt="a" width="250" height="250">
+<div class="wikiName">
+    <img src="./resources/wiki/intro.png" alt="a" width="250" height="250">
     <p>Chapters</p>
 </div>
 
-<div class="test">
+<div>
     <div class="chapters Epilogue">
-        <p class="title">Epiloque</p>
+        <h2>Epiloque</h2>
         <p class="info">Prologue is the very first chapter of Celeste. The chapter servers as a tutorial for walking and
             jumping. It is very calm with almost nothing to kill you. The level is placed under the main mountain on
-            a
-            parking lot where the story begins. There is mostly snow on the ground </p>
+            a parking lot where the story begins. There is mostly snow on the ground </p>
     </div>
     <div class="chapters ForsakenCity">
-        <p class="title">Forsaken City</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, aliquid cum delectus
-            dignissimos
-            eum harum iusto laudantium nam nihil officiis, quod repellendus saepe, vel velit vitae voluptate.
-            Cumque, totam?</p>
+        <h2>Forsaken City</h2>
+        <p class="info">Forsaken City is the first chapter of Celeste. It introduces several core mechanics of the game,
+            notably octadirectional dashes, red strawberries, red winged strawberries, and dash-refilling diamonds.
+            Additionally, Theo is first introduced during this chapter.</p>
     </div>
     <div class="chapters OldSite">
-        <p>Old Site</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>Old Site</h2>
+        <p class="info">Old Site is the second chapter of Celeste. Most of it occurs during one of Madeline's dreams. It
+            introduces Badeline for the first time, and also adds several new mechanics, including Dream Blocks, Seeded
+            Strawberries, and Touch switches (also known as coins or shields). </p>
     </div>
     <div class="chapters CelestialResort">
-        <p>Celestial Resort</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>Celestial Resort</h2>
+        <p class="info">Celestial Resort is the third chapter of Celeste. It occurs in the decrepit Celestial Resort
+            Hotel. It introduces Mr. Oshiro. This chapter notably features a vast number of Dust Bunnies, also known as
+            Sludge, which are the products of Mr. Oshiro's insecurities.</p>
     </div>
     <div class="chapters GoldenRidge">
-        <p>Golden Ridge</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>Golden Ridge</h2>
+        <p class="info">Golden Ridge is the fourth chapter of Celeste. It takes place on a windy cliff which scales
+            Celeste Mountain.This chapter introduces several new elements to the game, including bouncy
+            clouds and green bubbles; it also marks Granny's first appearance since the prologue.</p>
     </div>
     <div class="chapters MirrorTemple">
-        <p>Mirror Temple</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>Mirror Temple</h2>
+        <p class="info">Mirror Temple is the fifth chapter of Celeste. It introduces five new mechanics: Swap Blocks,
+            Red Bubbles, Seeker, Seeker Barriers, and the Theo Crystal. In this chapter Theo gets stuck in a mirror and
+            Madeline has to carry him around the end of chapter.</p>
     </div>
     <div class="chapters Reflection">
-        <p>Reflection</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>Reflection</h2>
+        <p class="info">Reflection is the sixth chapter of Celeste. It introduces five new mechanics: feathers, Kevin,
+            Bumpers, Badeline as a boss, and Badeline moving blocks. Madeline gets into here after falling from the camp
+            they built near Mirror Temple. It is located almost at the base of the mountain. Madeline also obtains
+            a second dash at the end of the chapter.</p>
     </div>
     <div class="chapters TheSummit">
-        <p>TheSummit</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>TheSummit</h2>
+        <p class="info">The Summit is the seventh chapter of Celeste. The Summit is a step up in difficulty. The last
+            part features flags that work like checkpoints. This chapter serves as the end of the main story. The Summit
+            introduces five new mechanics: upwards and downwards wind and sideways springs.</p>
     </div>
     <div class="chapters Core">
-        <p>Core</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>Core</h2>
+        <p class="info">Core is the eighth chapter of Celeste. The chapter is locked behind a Crystal Heart Gate,
+            requiring four Crystal Hearts to enter for the A-Side, 15 hearts for the B-Side, and 23 hearts for the
+            C-Side. The main gimmick of the level is the ability of switching the level from the Ice state to Lava and
+            back. Madeline also doesn't recharge her dash when landing.</p>
     </div>
     <div class="chapters Farewell">
-        <p>Farewell</p>
-        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio dolorum explicabo
-            non repudiandae temporibus, voluptas? A delectus dolor eaque earum est facere incidunt ipsum porro quidem
-            reprehenderit, sit tempore. </p>
+        <h2>Farewell</h2>
+        <p class="info">Farewell is both the final chapter of Celeste, as well as the longest and hardest. It features
+            new mechanics such as 2-Dash Refills, Pufferfish and Jellyfish. Farewell introduces Wavedashes to
+            the player. Unlike other chapters in Celeste, only the A side is present. The Bird becomes a central
+            character and a gameplay mechanic.</p>
     </div>
 </div>
 

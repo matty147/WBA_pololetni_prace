@@ -32,16 +32,15 @@
         background-repeat: no-repeat;
         height: 100vh;
         width: 100%;
-        /*background-position: right 50% bottom 0%;*/
-
+        min-height: 500px;
     }
 
     .logo-overlay {
         background-image: url(resources/index/small_celeste_logo.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 1750px;
-        height: 1529px;
+        width: 1000px;
+        height: 800px;
 
         position: absolute;
         top: 65%;
@@ -186,8 +185,8 @@
 
     @media (min-width: 1700px) {
         .logo-overlay {
-            width: 1750px;
-            height: 1529px;
+            width: 1000px;
+            height: 800px;
         }
 
         .buttons {
@@ -209,26 +208,26 @@
 
     @media (max-width: 1600px) {
         .logo-overlay {
-            width: 1200px;
-            height: 1000px;
+            width: 1000px;
+            height: 800px;
         }
 
     }
 
     @media (max-height: 1400px) {
         .logo-overlay {
-            width: 1200px;
-            height: 1100px;
+            width: 1000px;
+            height: 800px;
         }
     }
 
     @media (min-height: 1400px) {
         .banner {
-            height: 350px;
+            height: 60vh;
         }
 
         .logo-overlay {
-            top: 275px;
+            top: 650px;
         }
     }
 
@@ -253,7 +252,7 @@
             font-size: 60px;
         }
 
-        .screenshots > p{
+        .screenshots > p {
             font-size: 80px;
         }
 
@@ -272,12 +271,20 @@
             height: 350px;
         }
 
-        .screenshots > p{
+        .screenshots > p {
             font-size: 70px;
         }
 
         .screenshots img {
             width: 700px;
+        }
+    }
+
+    @media (max-height: 900px) {
+        .logo-overlay {
+            width: 900px;
+            height: 800px;
+            top: 573px;
         }
     }
 
@@ -309,9 +316,11 @@
         .logo-overlay {
             width: 650px;
             height: 500px;
-            top: 75%;
+            top: 573px;
         }
     }
+
+
 
     @media (max-width: 700px) {
         .trailer {
@@ -330,7 +339,7 @@
             padding: 0;
         }
 
-        .quote{
+        .quote {
             font-size: 70px;
         }
     }
@@ -345,7 +354,7 @@
             height: 400px;
             width: 150px;
             font-size: 40px;
-            gap: 0px;
+            gap: 0;
             margin: 0;
         }
 
@@ -374,7 +383,7 @@
         .logo-overlay {
             width: 650px;
             height: 500px;
-            top: 75%;
+            top: 420px;
         }
 
         .trailer p {
@@ -387,17 +396,17 @@
     }
 
     @media (max-width: 500px) {
-        .quote{
+        .quote {
             font-size: 50px;
             padding: 20px 0;
         }
 
-        .screenshots > p{
+        .screenshots > p {
             font-size: 50px;
         }
 
 
-        .screenshots > a{
+        .screenshots > a {
             margin-bottom: 10px;
         }
 
@@ -411,8 +420,8 @@
             font-size: 40px;
         }
 
-        .trailer{
-            margin:20px 0 50px 0;
+        .trailer {
+            margin: 20px 0 50px 0;
         }
 
     }
@@ -427,7 +436,7 @@
             margin: 0 0 0 10px;
         }
 
-        .buttons{
+        .buttons {
             height: 300px;
         }
 
@@ -479,7 +488,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<div class="quote"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit”</div>
+<div class="quote"> “Celeste is a surprise masterpiece.” - IGN
+</div>
 
 <div class="screenshots">
 

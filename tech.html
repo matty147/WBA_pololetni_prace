@@ -137,6 +137,11 @@
             counter-increment: item;
         }
 
+        .imgtoobig {
+            height: 200px;
+            width: auto;
+        }
+
         @media (max-width: 1200px ) {
             .wikiName > p {
                 font-size: 100px;
@@ -200,11 +205,11 @@
                 font-size: 30px;
             }
 
-            .container{
+            .container {
                 padding-bottom: 100px;
             }
 
-            .container >img{
+            .container > img {
                 width: 100%;
             }
         }
@@ -258,13 +263,14 @@
     <ol type="i">
         <li><a href="#BasicTech">Basic Tech</a>
             <ol>
-                <li><a href="#jump">jump</a></li>
-                <li><a href="#">Dash</a></li>
-                <li><a href="#">Climmbing</a></li>
-                <li><a href="#">Crouching</a></li>
+                <li><a href="#coyote">Coyote</a></li>
+                <li><a href="#dirspikes">Directional Spikes</a></li>
+                <li><a href="#hyper">Hyper Dash</a></li>
+                <li><a href="#reversals">Reversals</a></li>
+                <li><a href="#ultra">Ultra Dash</a></li>
+                <li><a href="#demo">Demo Dash</a></li>
             </ol>
         </li>
-        <li><a href="#dash">Dash</a></li>
     </ol>
 </div>
 
@@ -272,7 +278,7 @@
 <div class="tech">
     <h2 class="header" id="BasicTech">Basic Tech</h2>
     <div class="container">
-        <img src="resources/index/celeste_screenshot_01.png" alt="a">
+        <img src="resources/tech/coyotetime.gif" alt="a" id="coyote">
         <h2 id="jump">Coyote Time/Jump</h2>
         <p>Madeline can input a jump for 5 so-called "coyote" frames after walking off a ledge, allowing for more
             distance in certain situations. Hyperdashes and superdashes can be done during coyote frames despite not
@@ -281,23 +287,63 @@
 
 
     <div class="container">
-        <img src="resources/index/celeste_screenshot_02.png" alt="a">
+        <img src="resources/tech/SpikeJump.gif" alt="a" class="imgtoobig" id="dirspikes">
         <h2>Directional Spikes</h2>
         <p>Spikes won't hurt Madeline if she collides with them as long as she's moving in the direction they point.</p>
     </div>
 
+    <div class="container">
+        <img src="resources/tech/hyper.gif" alt="a" id="hyper">
+        <h2>Hyper Dashing</h2>
+        <p>A Hyper Dash is similar to a Dash Jump, the only difference being it gains less height but more distance. To
+            perform a Hyper Dash, Start by holding down and right (or left). Dash in the direction you want to go. A
+            moment
+            after dashing, jump and switch from holding down and right (or left), to only holding right (or left).</p>
+    </div>
 
     <div class="container">
-        <img src="resources/index/celeste_screenshot_03.png" alt="a">
-        <h2>Input Buffering</h2>
-        <p>Attempting to perform an action that's not currently possible will "buffer" (store) the input for the next 5
-            frames. If it becomes possible within those 5 frames, Madeline will instantly perform it. For example, if
-            you press jump slightly before landing on the ground, Madeline will jump on the first possible frame. This
-            is notably used to execute tech instantly after a screen transition or to turn frame-perfect tricks into
-            5-frame windows. It can be done with almost every action in the game.</p>
+        <img src="resources/tech/Reversal.gif" alt="a" id="reversals">
+        <h2>Reversals</h2>
+        <p>Reversals can be inconsistent and difficult, but they can allow for accumulating massive amounts of speed
+            when
+            combined with corner boosts. To perform a reversal, stand facing opposite a wall. Dash into the wall and as
+            soon
+            as you hit it, switch to moving in the opposite direction. This has to be done fast, or you won't gather
+            enough
+            momentum. After changing direction, just jump. Reversal are quite advanced and it can be difficult to regain
+            your dash after doing one. There aren't many tips I can give for this except practising them is the only way
+            to
+            get consistent.</p>
+    </div>
+    <div class="container">
+        <img src="resources/tech/UltraDash.gif" alt="a" id="ultra">
+        <h2>Ultra</h2>
+        <p>Ultra Dashes allow for gaining an insane amount of momentum. Normally, when carrying momentum through the
+            air,
+            dashing in any direction cancels that momentum, slowing you down. That is, every direction except down
+            diagonally. This allows for Ultra Dashes to be executed. To perform one, first get any amount of momentum
+            with
+            space in the air. This can be achieved through moving blocks or Extended Hypers or Wave Dashes. While in the
+            air, dash diagonally downwards in the direction you are moving. This will carry your momentum rather than
+            slowing you down.</p>
+    </div>
+
+    <div class="container">
+        <img src="resources/tech/demo.gif" alt="a" id="demo">
+        <h2>Demo</h2>
+        <p>Demo Dashes are very complicated and almost pixel perfect. They allow for shrinking Madeline's hitbox while
+            dashing and in turn lets you dash through certain obstacles. To perform a Demo Dash, Jump, and press down,
+            right before dashing. This is very precise but luckily an easier way to do it exists. This requires creating
+            a keybind. Go to Options --> Keyboard Config and set an extra key for Dash and Down. This key needs to be
+            the same. For example, I used ; (semicolon).
+            Tips for using the bind:
+            The keybind is difficult to use, and if you are playing on controller requires switching to keyboard for the
+            Demo Dash. If you try to simply jump and then press the bind in midair, you will dash straight down. To
+            avoid this, all that is required is a short press of left or right wile in that air. Make sure to release
+            this button before performing the demo dash.
+        </p>
     </div>
 </div>
-
 <div class="footer">
     <p>This is a fanmade project that is in no way associated with Celeste or Extremely OK Games,
         Ltd.</p>
